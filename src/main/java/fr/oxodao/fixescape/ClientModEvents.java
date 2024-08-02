@@ -1,15 +1,14 @@
 package fr.oxodao.fixescape;
 
+import cpw.mods.util.Lazy;
 import net.minecraftforge.fml.common.Mod;
 
 import org.lwjgl.glfw.GLFW;
 
 import com.mojang.blaze3d.platform.InputConstants;
 
-import net.minecraft.client.KeyMapping;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
-import net.minecraftforge.common.util.Lazy;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 @Mod.EventBusSubscriber(modid = FixEscape.MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
