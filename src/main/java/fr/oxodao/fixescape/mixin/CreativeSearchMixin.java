@@ -12,7 +12,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class CreativeSearchMixin {
     @Inject(method = "keyPressed", at = @At("HEAD"), cancellable = true)
     public void onKeyPressed(int keyCode, int scanCode, int modifiers, CallbackInfoReturnable<Boolean> cir) {
-        System.out.println(keyCode + " / " + ClientModEvents.NEW_ESCAPE.get().getKey().getValue());
         if (keyCode == ClientModEvents.NEW_ESCAPE.get().getKey().getValue()) {
             Minecraft mc = Minecraft.getInstance();
             if (mc.screen != null && mc.screen.shouldCloseOnEsc()) {
