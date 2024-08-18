@@ -10,6 +10,8 @@ This mod adds a second escape key that is re-bindable on any key you want. So yo
 
 ## Versions
 
+NOTE: Starting 1.21 this mod targets NeoForge. I'm dropping Forge support as most mod seems to do the same.
+
 This branch produce a jar compatible for 1.21 and 1.21.1
 
 
