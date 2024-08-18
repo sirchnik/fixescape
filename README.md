@@ -17,10 +17,6 @@ This branch produce a jar compatible for 1.21 and 1.21.1
 
 This mod is inspired by [TheEnderCore's EscapeScreen](https://github.com/theendercore/EscapeScreen) for Fabric, but since these days I'm playing with Forge, I needed a forge version.
 
-## Known issues
-
-- The second escape does not work when focusing creative inventory's textfield. Not sure why, I'll take a look at this later
-
 
 ## License
 
