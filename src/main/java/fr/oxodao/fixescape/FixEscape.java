@@ -1,12 +1,12 @@
 package fr.oxodao.fixescape;
 
-import net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen;
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.NeoForge;
 
-@Mod(FixEscape.MOD_ID)
+@Mod(value = FixEscape.MOD_ID, dist = Dist.CLIENT)
 public class FixEscape
 {
     public static final String MOD_ID = "fixescape";
