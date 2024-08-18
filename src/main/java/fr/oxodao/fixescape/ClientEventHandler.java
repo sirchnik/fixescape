@@ -2,15 +2,15 @@ package fr.oxodao.fixescape;
 
 import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.client.Minecraft;
-import net.minecraftforge.client.event.InputEvent;
-import net.minecraftforge.client.event.ScreenEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.neoforge.client.event.InputEvent;
+import net.neoforged.neoforge.client.event.ScreenEvent;
 
 public class ClientEventHandler {
     private static boolean IS_KEY_PRESSED = false;
 
     @SubscribeEvent
-    public void onScreenKeyPressed(ScreenEvent.KeyPressed.Post evt){
+    public void onScreenKeyPressed(ScreenEvent.KeyPressed.Post evt) {
         if (ClientEventHandler.IS_KEY_PRESSED) {
             return;
         }
@@ -28,7 +28,7 @@ public class ClientEventHandler {
     }
 
     @SubscribeEvent
-    public void onScreenKeyRelease(ScreenEvent.KeyReleased.Post evt){
+    public void onScreenKeyReleased(ScreenEvent.KeyReleased.Post evt) {
         ClientEventHandler.IS_KEY_PRESSED = false;
     }
 
@@ -51,6 +51,5 @@ public class ClientEventHandler {
                 mc.pauseGame(false);
             }
         }
-
     }
 }

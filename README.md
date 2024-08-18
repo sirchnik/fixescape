@@ -1,16 +1,16 @@
 # FixEscape
 
-Since Minecraft 1.19, Mojang has broken the way the game handles keybind, and it doesn't looks like they are going to fix it.
+Since Minecraft 1.19, Mojang has broken the way the game handles keybind, and it doesn't look like they are going to fix it.
 
-Instead of using the emmited key, they use the physical key pressed. People that rebind keys are left alone on this.
+Instead of using the emitted key, they use the physical key pressed. People that rebind keys are left alone on this.
 
-For most keybinds its ok, you can remap them ingame. But you can't remap escape.
+For most keybind it's ok, you can remap them in-game. But you can't remap escape.
 
 This mod adds a second escape key that is re-bindable on any key you want. So you can finally play the game again even if you're using `caps:swapescape`.
 
 ## Versions
 
-This branch produce a jar compatible for 1.20.2 and 1.20.4
+This branch produce a jar compatible for 1.21 and 1.21.1
 
 
 ## Credits
