@@ -9,6 +9,10 @@ import net.neoforged.neoforge.client.event.ScreenEvent;
 public class ClientEventHandler {
     private static boolean IS_KEY_PRESSED = false;
 
+    public static void omitNextEscape() {
+        ClientEventHandler.IS_KEY_PRESSED = true;
+    }
+
     @SubscribeEvent
     public void onScreenKeyPressed(ScreenEvent.KeyPressed.Post evt) {
         if (ClientEventHandler.IS_KEY_PRESSED) {
